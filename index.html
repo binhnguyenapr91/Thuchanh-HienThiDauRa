@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuc hanh hien thi dau ra bang JS</title>
+</head>
+<body>
+
+<p> Demo show Message Dialog</p>
+<!--Tao mot button co thuoc tinh JS onclick se goi ham showMessageAlert()-->
+<button type="button" onclick="showMessageAlert()">Click Me</button>
+<hr>
+
+<p> Demo hien thi Thong bao HTML</p>
+<!--Tao mot button co thuoc tinh JS onclick se goi ham showMessageHTML()-->
+<div id="messageHTML"></div>
+<button type="button" onclick="showMessageHTML()">Click Me</button>
+
+<p> Demo hien thi Thong bao HTML</p>
+<!--Tao mot button co thuoc tinh JS onclick se goi ham showMessage()-->
+<button type="button" onclick="showMessage()">Click Me</button>
+
+<!--Tao mot button co thuoc tinh JS onclick se goi ham showMessageByLog()-->
+<p><button type="button" onclick="showMessageByLog()">Click Me</button></p>
+
+<script>
+    <!--Doan Script se hien thi mot hop thoai thong bao khi duoc kich hoat-->
+    function showMessageAlert() {
+        alert('Hello JS World');
+    }
+
+    <!--Doan Script se hien thi mot thong bao HTML khi duoc kich hoat-->
+    function showMessageHTML() {
+        document.getElementById("messageHTML").innerHTML = "Hello JavaScript";
+    }
+
+    <!--Doan Script se hien thi mot thong bao HTML khi duoc kich hoat-->
+    function showMessage() {
+        document.write("Hello JavaScript");
+    }
+    
+    function showMessageByLog() {
+        console.log("Hello Log");
+    }
+</script>
+</body>
+</html>
